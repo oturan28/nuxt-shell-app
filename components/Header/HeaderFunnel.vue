@@ -8,9 +8,6 @@ const isAuthenticatedCopy = ref(props.isAuthenticated)
 <template>
   <header class="border-b border-neutral-300 sticky top-0 z-10 bg-white h-[58px]">
     <div class="w-full max-w-7xl mx-auto py-4 px-4 xl:px-2.5 flex items-center justify-between">
-      <p>hallo</p>
-      <p>hallo</p>
-      <p>hallo</p>
       <a class="print:hidden hover:bg-inherit" href="/public" title="Anwalt suchen und finden bei anwalt.de">
         <img src="https://www.anwalt.de/img/anwalt.de-logo.svg" class="img-fluid" width="130" height="25" alt="Anwalt suchen und finden bei anwalt.de">
       </a>
