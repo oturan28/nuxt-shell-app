@@ -1,15 +1,14 @@
+<script setup lang="ts">
+</script>
 <template>
   <div class="min-h-screen flex flex-col">
-  <HeaderFunnel />
+    <HeaderDefault />
     <slot id="content" class="flex grow">
       <div class="w-full">
 
       </div>
     </slot>
   </div>
-  <FooterFunnel />
+  <FooterDefault />
 </template>
-<script setup lang="ts">
-import HeaderFunnel from "~/components/Header/HeaderFunnel.vue";
-import FooterFunnel from "~/components/Footer/FooterFunnel.vue";
-</script>
+
