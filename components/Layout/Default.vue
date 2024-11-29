@@ -2,7 +2,7 @@
 </script>
 <template>
   <div class="min-h-screen flex flex-col">
-    <slot id="header">
+    <slot name="header">
       <HeaderDefault />
     </slot>
     <slot id="content" class="flex grow">
@@ -11,7 +11,7 @@
       </div>
     </slot>
   </div>
-  <slot id="footer">
+  <slot name="footer">
     <FooterDefault />
   </slot>
 </template>
