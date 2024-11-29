@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const showDropdown = ref(false)
-const userName = ref('')
 defineProps<{
   userName?: string
 }>()
@@ -23,7 +22,7 @@ defineProps<{
           </div>
         </div>
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <slot v-if="$slots.loginStateNavbar" name="loginStateNavbar" :userName="userName">
+          <slot v-if="$slots.loginStateNavbar" name="loginStateNavbar">
             <p class="text-gray-300">{{ userName }}</p>
           </slot>
           <div class="relative ml-3">
