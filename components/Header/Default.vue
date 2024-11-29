@@ -1,6 +1,9 @@
 <script setup lang="ts">
 const showDropdown = ref(false)
 const userName = ref('')
+defineProps<{
+  userName?: string
+}>()
 </script>
 <template>
   <nav class="bg-gray-800">
