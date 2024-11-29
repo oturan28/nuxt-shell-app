@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const showDropdown = ref(false)
+const userName = ref('')
 </script>
 <template>
   <nav class="bg-gray-800">
@@ -19,7 +20,9 @@ const showDropdown = ref(false)
           </div>
         </div>
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <slot name="loginStateNavbar"></slot>
+          <slot v-if="$slots.loginStateNavbar" name="loginStateNavbar" :userName="userName">
+            <p class="text-gray-300">{{ userName }}</p>
+          </slot>
           <div class="relative ml-3">
             <div>
               <button @click="showDropdown = !showDropdown" type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
@@ -29,7 +32,9 @@ const showDropdown = ref(false)
               </button>
             </div>
             <div v-show="showDropdown" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-              <slot name="loginStateDropdown"></slot>
+              <slot v-if="$slots.loginStateDropdown" name="loginStateDropdown">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Logout Button</a>
+              </slot>
               <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
               <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
               <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
