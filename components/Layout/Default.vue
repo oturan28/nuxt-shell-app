@@ -5,11 +5,11 @@
     <slot name="header">
       <HeaderDefault />
     </slot>
-    <slot id="content" class="flex grow">
+    <div id="content" class="flex grow">
       <div class="w-full">
 
       </div>
-    </slot>
+    </div>
   </div>
   <slot name="footer">
     <FooterDefault />
