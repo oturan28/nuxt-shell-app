@@ -2,5 +2,7 @@
 </script>
 
 <template>
-  <p>hi I am logout</p>
+  <div class="container mt-10 mx-auto">
+    <p>I am logout page</p>
+  </div>
 </template>
