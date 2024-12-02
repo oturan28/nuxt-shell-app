@@ -12,9 +12,7 @@
   "dependencies": {
     "nuxt": "^3.13.0",
     "vue": "latest",
-    "vue-router": "latest"
-  },
-  "devDependencies": {
+    "vue-router": "latest",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt-auth-utils": "^0.5.5"
   }
