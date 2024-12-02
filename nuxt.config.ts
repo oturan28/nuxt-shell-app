@@ -4,8 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', 'nuxt-auth-utils'],
   runtimeConfig: {
-    sessionPassword: process.env.NUXT_SESSION_PASSWORD,
-    oauthGithubClientId: process.env.OAUTH_GITHUB_CLIENT_ID,
-    oauthGithubClientSecret: process.env.NUXT_OAUTH_GITHUB_CLIENT_SECRET,
+    oauth: {
+      github: {
+        clientId: 'Ov23liWEq2ZhhpT0yLvU',
+        clientSecret: '6678d4f641a945cb131288e7402fcc43d6ceb707'
+      }
+    },
   }
 })
