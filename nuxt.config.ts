@@ -8,7 +8,6 @@ export default defineNuxtConfig({
       github: {
         clientId: 'Ov23liWEq2ZhhpT0yLvU',
         clientSecret: '6678d4f641a945cb131288e7402fcc43d6ceb707',
-        redirectURL: '/auth/github'
       }
     }
   }
