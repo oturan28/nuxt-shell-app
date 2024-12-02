@@ -7,5 +7,5 @@ export default defineNuxtConfig({
     componentIslands: 'local+remote'
   },
 
-  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss']
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-auth-utils']
 })

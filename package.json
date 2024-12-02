@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "@pinia/nuxt": "^0.5.4"
+    "nuxt-auth-utils": "^0.5.5"
   }
 }
