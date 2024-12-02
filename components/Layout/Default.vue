@@ -5,7 +5,7 @@ const { user, clear } = useUserSession()
 <template>
   <div class="min-h-screen flex flex-col">
     <slot name="header">
-      <HeaderDefault @logoutClicked="clear"  :user="user"/>
+      <HeaderDefault @logoutClicked="clear" :user="user"/>
     </slot>
     <slot id="content" class="flex grow">
       <div class="w-full">
