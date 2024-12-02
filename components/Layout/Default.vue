@@ -1,11 +1,7 @@
-<script setup lang="ts">
-const { user, clear } = useUserSession()
-
-</script>
 <template>
   <div class="min-h-screen flex flex-col">
     <slot name="header">
-      <HeaderDefault @logoutClicked="clear" :user="user"/>
+      <HeaderDefault />
     </slot>
     <slot id="content" class="flex grow">
       <div class="w-full">

@@ -2,10 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-
-  experimental: {
-    componentIslands: 'local+remote'
-  },
   modules: ['@nuxtjs/tailwindcss', 'nuxt-auth-utils'],
   runtimeConfig: {
     sessionPassword: process.env.NUXT_SESSION_PASSWORD,
