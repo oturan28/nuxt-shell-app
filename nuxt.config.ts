@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         github: {
           clientId: 'Ov23liNmZ7G59mRd5aq7',
           clientSecret: 'f6bd638880e4db1074a74b447d7b9b5ed38235fe',
+          redirectURL: 'https://nuxt-shell-app.vercel.app/api/auth/github'
         }
       }
     }
